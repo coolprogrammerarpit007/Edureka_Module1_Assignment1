@@ -1,0 +1,271 @@
+/* Removing Default Styling of the Page */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #333;
+    background-color: #FBFBFB
+}
+
+.container{
+    max-width: 68.75rem;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* Styling The Navigation Bar */
+
+.navbar{
+    background-color: rgb(219, 21, 21);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar .logo{
+    font-size: x-large;
+    font-weight: bold;
+    background-color: #fff;
+    border-radius:24px ;
+}
+
+.navbar .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar .account{
+    display: flex;
+    align-items: center;
+}
+
+.account .login{
+    margin-right: 3.25rem;
+    color: #fff;
+}
+.account .btn{
+    
+    /* display: inline-block; */
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    transition: box-shadow 0.15s ease,transform 0.15s ease;
+    will-change: box-shadow,transform;
+    background: #FCFCFD;
+    box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+    height: 48px;
+    padding: 0 32px;
+    font-size: 18px;
+    border-radius: 6px;
+    color: #36395a;
+    transition: box-shadow 0.15s ease,transform 0.15s ease;
+    
+    
+}
+
+.account .btn:hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgba(242, 240, 247, 0.3), inset 0px -3px 0px #d3d3d6;
+    transform: translateY(-2px);
+}
+.account .btn:active{
+    box-shadow: inset 0px 3px 7px #d6d6e7;
+    transform: translateY(2px);
+}
+
+
+/*  **************************************** */
+
+.header{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #FAFBFC;
+    color: #192F60;
+    font-size: 2rem;
+}
+
+
+/* ***************************************** */
+
+.filter{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(17,12,46,0.15) 0px 48px 100px 0px;
+    margin-bottom: 10px;
+}
+
+.filter h3,.filter p{
+    color:#192F60;
+    margin-bottom: 1rem;
+}
+
+.filter div{
+    margin-top: 0.8rem;
+}
+
+.filter p{
+    margin-top: 1.5rem;
+    margin-bottom: 0.85rem;
+    opacity: 0.85;
+}
+
+.filter div input,label{
+    color: #192F60;
+    opacity: 50%;
+}
+
+.item{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: rgba(17,12,46,0.15) 0px 48px 100px 0px;
+    margin-bottom: 10px;
+}
+
+.item-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-container img{
+    border-radius: 5px;
+}
+
+.recipe-content h3, td{
+    color:#192F60;
+}
+.recipe-content p{
+    color: #636F88;
+    font-size: 14px;
+}
+
+hr{
+    margin-top: 0.85rem;
+    margin-bottom:1rem ;
+    border:1px grey ;
+    border-style: solid solid none solid;
+}
+
+td{
+    padding: 20px;
+}
+
+
+/* ********************************************** */
+
+/* Layout styling using CSS Grid */
+
+.section .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.section .container .filter{
+    grid-row: 1/3;
+}
+
+.section .container .item1{
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.section .container .item2{
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+/* Styling The footer */
+
+
+.footer >.container{
+    text-align: center;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+}
+
+.footer .btn{
+    border: 0.5px solid #8c96AB;
+    border-radius: 3px;
+    padding:5px 10px;
+    color: #8c96AB;
+    cursor: pointer;
+}
+
+.footer .btn:hover{
+    background-color:#8C96AB;
+    color: #fff;
+}
+
+
+.footer .btn:nth-of-type(1){
+    background-color: #8c96AB;
+    color: #fff;
+}
+
+.footer .btn:nth-of-type(1):hover{
+    background-color: #fff;
+    color:#8C96AB;
+}
+
+
+/* Responsive Design */
+
+@media only screen and (max-width:768px){
+    .header{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .navbar .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navbar .account{
+        flex-direction: column;
+    }
+
+    .account .login{
+        margin-right: 1rem;
+    }
+
+    
+.section .container{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-gap: 1rem;
+}
+
+
+.section .container .filter{
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+.section .container .item1{
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 2;
+}
+
+.section .container .item2{
+    text-align: center;
+    grid-column: 1/4;
+    grid-row:3 ;
+}
+
+
+}
+
+

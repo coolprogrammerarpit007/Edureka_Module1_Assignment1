@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module1: Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat&family=Poppins&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">e!</div>
+            <div class="account">
+                <div class="login">Login</div>
+                <button class="btn">Create an Account</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            Breakfast Places in Mumbai
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="filter">
+                <h3>Filters</h3>
+                <p>Select Location</p>
+                <select name="location" id="locaation-select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="India">India</option>
+                    <option value="Australia">Australia</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Germany">Germany</option>
+                    <option value="France">France</option>
+                    <option value="Japan">Japan</option>
+                </select>
+                <p>Cusine</p>
+                <div>
+                    <input type="checkbox" id="north" name="North Indian" checked>
+                    <label for="north">North Indian</label>
+                  </div>
+              
+                  <div>
+                    <input type="checkbox" id="south" name="South Indin">
+                    <label for="south">South Indin</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox" id="chineese" name="Chineese">
+                    <label for="chineese">Chineese</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox" id="fast" name="Fast Food">
+                    <label for="fast">Fast Food</label>
+                  </div>
+
+                  <div>
+                    <input type="checkbox" id="street" name="Street Food">
+                    <label for="street">Street Food</label>
+                  </div>
+
+                  <p>Cost for two</p>
+                  <div>
+                    <input type="radio" id="Less-500" name="price" value="Less-500"
+                           checked>
+                    <label for="Less-500">Less than 500</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="500-1000" name="price" value="500-1000"
+                           >
+                    <label for="500-1000">500 to 1000</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="1000-2000" name="price" value="1000-2000"
+                           >
+                    <label for="1000-2000">Less than 500</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="2000+" name="price" value="2000+"
+                           >
+                    <label for="2000+">2000+</label>
+                  </div>
+
+                  <p>Sort</p>
+
+                  <div>
+                    <input type="radio" id="low" name="range" value="low"
+                           >
+                    <label for="low">Price low to high</label>
+                  </div>
+
+                  <div>
+                    <input type="radio" id="high" name="range" value="high"
+                           >
+                    <label for="high">Price high to low</label>
+                  </div>
+              
+            </div>
+
+            <div class="item item1">
+                <div class="item-container">
+                    <img src="images/indian_cusine.jpg" alt="Indian Cusine">
+
+                <div class="recipe-content">
+                    <h1>The Big Chill Cakery</h1>
+                    <h3>Fort</h3>
+                    <p>Shop1, Plot D, Samruddhi Complex Chincholi...</p>
+                </div>
+                </div>
+                <hr>
+                <table>
+                    <tr>
+                        <td>Cusines</td>
+                        <td>Bakery</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cost For Two:</td>
+                        <td>₹700</td>
+                    </tr>
+
+
+                </table>
+            </div>
+
+            <div class="item item2">
+                <div class="item-container">
+                    <img src="images/indian_cusine.jpg" alt="Indian Cusine">
+
+                <div class="recipe-content">
+                    <h1>The Bake Shop</h1>
+                    <h3>Fort</h3>
+                    <p>Shop1, Plot D, Samruddhi Complex Chincholi...</p>
+                </div>
+                </div>
+                
+                <hr>
+                <table>
+                    <tr>
+                        <td>Cusines</td>
+                        <td>Bakery</td>
+                    </tr>
+
+                    <tr>
+                        <td>Cost For Two:</td>
+                        <td>₹700</td>
+                    </tr>
+
+                    
+                </table>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <button class="btn">&lt;</button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">&gt;</button>
+
+        </div>
+    </footer>
+</body>
+</html>
